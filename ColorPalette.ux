@@ -1,0 +1,21 @@
+<Panel ux:Class="ColorPalette">
+
+	<float4 ux:Global="Evolve.BGGreyDark" ux:Value="#292732" />
+	<float4 ux:Global="Evolve.BGGreyLight" ux:Value="#E1E1E1" />  
+	<float4 ux:Global="Evolve.PrimaryGreyDark" ux:Value="#44424D" />
+	<float4 ux:Global="Evolve.SecondaryOffWhite" ux:Value="#F2F2F2" />
+
+	<float4 ux:Global="Evolve.PrimaryYellow" ux:Value="#EDD96F" />
+	<float4 ux:Global="Evolve.PrimaryYellowTint" ux:Value="#DCC442" />
+	<float4 ux:Global="Evolve.PrimaryGreen" ux:Value="#5BC478" />
+	<float4 ux:Global="Evolve.PrimaryBlue" ux:Value="#4B8DEC" />
+	<float4 ux:Global="Evolve.PrimaryRed" ux:Value="#E65461" />
+	<float4 ux:Global="Evolve.PrimaryOrange" ux:Value="#CE820D" />
+	<float4 ux:Global="Evolve.PrimaryAmber" ux:Value="#C14A3B" />
+
+	<!-- Text Colors -->
+	<float4 ux:Global="Evolve.TextDark" ux:Value="#34323D" />
+	<float4 ux:Global="Evolve.TextMedium" ux:Value="#98979D" />
+	<float4 ux:Global="Evolve.TextLight" ux:Value="#F2F2F2" />
+
+</Panel>

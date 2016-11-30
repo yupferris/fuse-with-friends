@@ -1,0 +1,40 @@
+<Page ux:Class="DetailPage" ClipToBounds="true" >
+	<Router ux:Dependency="router"/>
+	<Viewport Perspective="300" CullFace="Back">
+		<DockPanel>
+			<Evolve.BackPanel Title="Shoes"/>
+            <Page ux:Class="Item" TransformOrigin="HorizontalBoxCenter" Opacity="1">
+                <Panel ux:Name="_content" >
+                	<StackPanel Padding="40" Alignment="CenterRight"  Color="#fff">	
+	                	<Text Value="Some Random Stilleto" Alignment="Center" Font="Roboto_Light" TextAlignment="Center" TextWrapping="Wrap" TextColor="Evolve.TextMedium" FontSize="20"/>
+	                	<Text Value="$59.99" Alignment="Center" Font="Roboto_Medium" TextColor="Evolve.TextDark"/>
+	                	<Image File="Assets/Shoe Images/HighHeel1.jpg"/>
+	                	<Evolve.StrokeButton ButtonText="ADD TO CART" Alignment="Right"/>
+                	</StackPanel>
+                </Panel>
+                <Rotation DegreesY="-2" />
+                <EnteringAnimation>
+                    <Move X="1" RelativeTo="Size" Easing="Linear" Duration="0.6" />
+                    <Change _content.Opacity="0" Duration="0.4" Easing="Linear" Delay="0.001" />
+                    <Change CardShadowStack.Color="#0000" Duration="0.1" Easing="Linear" />
+                    <Rotate DegreesY="-10" Duration="0.4" />
+                </EnteringAnimation>
+                <ExitingAnimation Scale="0.14 ">
+                    <Move X="-1" RelativeTo="Size" Duration="0.6" Easing="Linear" />
+                    <Move Z="20" Duration="0.6" Easing="Linear" />
+                    <Scale Factor="0.8" Duration="0.6" />
+                    <Change CardShadowStack.Color="#0000" Duration="0.1" Easing="Linear" />
+                    <Change _content.Opacity="0" Duration="0.3" Easing="Linear" />
+                </ExitingAnimation>
+                <Shadow Distance="40" Size="30" Color="#0004" Angle="90" ux:Name="CardShadowStack" />
+            </Page>
+            <Panel Margin="100, 100, 5, 100" Dock="Fill" Alignment="Default">
+                <LinearNavigation />
+                <SwipeNavigate />
+                <Each Count="20">
+                    <Item  />
+                </Each>
+            </Panel>
+        </DockPanel>
+    </Viewport>
+</Page>

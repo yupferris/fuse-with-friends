@@ -1,0 +1,10 @@
+<Rectangle Color="Evolve.PrimaryYellow" Width="80" Height="80" ux:Class="Evolve.SquareButton">
+	<Evolve.EvolveIcon  Icon="Add" Color="White" Alignment="Center" ux:Name="AddingIcon" >
+		<Rotation Degrees="{Property this.IconRotation}"/>
+		<float ux:Property="IconRotation"/>
+	</Evolve.EvolveIcon>
+	<WhilePressed>
+		<Scale Target="AddingIcon" Factor="0.9" Duration="0.2"/>
+		<Change this.Color="Evolve.PrimaryYellowTint" Duration="0.2"/>
+	</WhilePressed>
+</Rectangle>

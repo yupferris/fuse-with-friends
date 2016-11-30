@@ -1,0 +1,40 @@
+<Page ux:Class="CartPage" ClipToBounds="true">
+	<Router ux:Dependency="router"/>
+	<DockPanel Padding="20">
+		<Text Alignment="TopCenter" Value="Your Shopping Cart" TextColor="White" Dock="Top"/>
+	</DockPanel>
+	<Grid Padding="20,60,20,0" Rows="auto,1*">
+		<Grid Columns="1*,1*" Margin="0,0,0,40">
+			<Text Value="Total: $239.00" TextColor="White" FontSize="24" Font="Roboto_Light" Alignment="CenterLeft"/>
+			<Evolve.StrokeButton ButtonText="CHECKOUT" Alignment="Right"/>
+		</Grid>
+		<Panel Color="White" ux:Class="Evolve.CartItem" Opacity="0.1">
+			<Grid Columns="100,4*,1*">
+				<Panel Height="100" Width="100" ClipToBounds="true">
+					<Image File="Assets/Shoe Images/HighHeel1.jpg" StretchMode="UniformToFill"/>
+				</Panel>
+				<StackPanel Alignment="CenterLeft" Padding="10,0" ItemSpacing="5">
+					<Text Value="Random Stilleto" TextWrapping="Wrap" FontSize="20" Font="Roboto_Light" TextColor="Evolve.TextMedium"/>
+					<Text Value="59.99 USD" Font="Roboto_Medium" TextColor="Evolve.TextDark" />
+				</StackPanel>
+				<Evolve.EvolveIcon Icon="Close" Color="Evolve.TextMedium" Alignment="TopRight" Margin="10" HitTestMode="LocalBoundsAndChildren">
+					<WhilePressed>
+						<Scale Factor="0.9"/>
+					</WhilePressed>
+				</Evolve.EvolveIcon>
+			</Grid>
+			<WhileVisibleInScrollView>
+                <Change this.Opacity="1" Duration="0.2"/>
+                <Scale Factor="1.01" Duration="0.2"/>
+            </WhileVisibleInScrollView>
+		</Panel>
+		<ScrollView ClipToBounds="false" SnapMinTransform="false" Margin="0,80,0,0">
+			<StackPanel ItemSpacing="10" Padding="0,-80,0,0">
+				<Each Count="20">
+					<Evolve.CartItem/>
+				</Each>
+				<Evolve.CardShadow/>
+			</StackPanel>
+		</ScrollView>
+	</Grid>
+</Page>

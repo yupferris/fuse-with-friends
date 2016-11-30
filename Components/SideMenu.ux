@@ -1,0 +1,5 @@
+<Container ux:Class="Evolve.SideMenu" Subtree="subtree" MaxWidth="280" Width="100%">
+	<Panel ux:Binding="Children" ux:Name="subtree" Color="Evolve.BGGreyDark">
+	</Panel>
+</Container>
+

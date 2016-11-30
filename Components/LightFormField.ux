@@ -1,0 +1,12 @@
+<Panel Height="32" ux:Class="Evolve.LightFormField" Margin="0,10,0,10">
+	<TextInput Alignment="CenterLeft" Margin="20,0" FontSize="14" PlaceholderText="{Property this.HintText}"  PlaceholderColor="#0006" TextColor="Evolve.TextDark" InputHint="{Property this.HintType}" IsPassword="{Property this.Password}" ux:Name="TextField">
+		<WhileFocused>
+			<Change Underline.Color="Evolve.PrimaryYellow" Duration="0.4" Easing="QuinticInOut" />
+			<Change Underline.Height="2" Duration="0.4" Easing="QuinticInOut" />
+		</WhileFocused>
+		<string ux:Property="HintText"/>
+		<bool ux:Property="Password"/>
+		<TextInputHint ux:Property="HintType"/>
+	</TextInput>
+	<Rectangle Height="1" Color="Evolve.BGGreyLight" Alignment="Bottom" ux:Name="Underline"/>
+</Panel>

@@ -1,0 +1,12 @@
+<DockPanel ux:Class="Evolve.BottomBar" >
+	<Panel Dock="Bottom" Height="80" Width="100%" ClipToBounds="true" Color="Evolve.PrimaryGreyDark">
+		<Rectangle Width="100%" Height="1" Color="#2D2A30" Alignment="Top"/>
+		<Grid Columns="1*,1*,1*">
+			<Selection Value="ONE" MinCount="1" MaxCount="1"/>
+			<Evolve.BottomBarItem Label="ONE" Clicked="{gotoHome}" IconType="Home"/>
+			<Evolve.BottomBarItem Label="TWO" Clicked="{pushDetail}" IconType="Stats"/>
+			<Evolve.BottomBarItem Label="THREE" Clicked="{gotoCart}" IconType="Location"/>
+		</Grid>
+		<Evolve.BackgroundImage Alignment="Bottom" ContentAlignment="Bottom" Opacity="0.5"/>
+	</Panel>
+</DockPanel>

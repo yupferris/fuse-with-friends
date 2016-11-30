@@ -1,0 +1,57 @@
+<App>
+	<JavaScript File="MainView.js"/>
+	<ColorPalette />
+	<Router ux:Name="router" IsMasterRouter="false" />
+	<Evolve.SideMenuPanel>
+		<Evolve.SideMenu ux:Binding="SideMenu" Edge="Left" />
+		<Panel Color="Evolve.PrimaryGreyDark">
+			<ClientPanel>
+				<DockPanel>
+					<Panel Dock="Bottom" Height="80" Width="100%" ClipToBounds="true" Color="Evolve.PrimaryGreyDark">
+						<Rectangle Width="100%" Height="1" Color="#2D2A30" Alignment="Top"/>
+						<Grid Columns="1*,1*,1*">
+							<Selection Value="ONE" MinCount="1" MaxCount="1" ux:Name="Selector"/>
+							<Evolve.BottomBarItem Label="ONE" IconType="Home">
+								<Clicked Handler="{gotoHome}"/>
+							</Evolve.BottomBarItem>
+							<Evolve.BottomBarItem Label="TWO"  IconType="Browse">
+								<Clicked Handler="{pushDetail}"/>
+							</Evolve.BottomBarItem>
+							<Panel>
+								<Circle Height="20" Width="20" Color="Evolve.PrimaryRed" Alignment="Center" Offset="16,-10" ux:Name="notificationsBubble">
+									<Text TextColor="White" Value="8" FontSize="12" Font="Roboto_Medium" Alignment="Center" />
+								</Circle>
+								<Evolve.BottomBarItem Label="THREE" IconType="Cart">
+									<Clicked Handler="{gotoCart}"/>
+								</Evolve.BottomBarItem>
+							</Panel>
+						</Grid>
+						<Evolve.BackgroundImage Alignment="Bottom" ContentAlignment="Bottom" Opacity="0.5"/>
+					</Panel>
+				</DockPanel>
+					<PageControl Active="home" Interaction="None">
+						<HomePage ux:Name="home" router="router">
+							<WhileActive>
+								<Change Selector.Value="ONE"/>
+							</WhileActive>
+						</HomePage>
+						<DetailPage ux:Name="detail" router="router">
+							<WhileActive>
+								<Change Selector.Value="TWO"/>
+							</WhileActive>
+						</DetailPage>
+						<CartPage ux:Name="cart" router="router">
+							<WhileActive>
+								<Change Selector.Value="THREE"/>
+							</WhileActive>
+							<ActivatingAnimation>
+								<Scale Target="notificationsBubble" Factor="1.2" Duration="0.1"/>
+							</ActivatingAnimation>
+						</CartPage>
+					</PageControl>
+			</ClientPanel>
+			<Evolve.BackgroundImage Opacity="0.5" />
+		</Panel>
+	</Evolve.SideMenuPanel>
+
+</App>

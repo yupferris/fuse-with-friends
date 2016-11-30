@@ -1,0 +1,15 @@
+<Rectangle ux:Class="Evolve.BottomBarItem">
+	<SolidColor Color="Evolve.BGGreyDark" Opacity="0" ux:Name="SelectionFill"/>
+	<string ux:Property="Label"/>
+	<Selectable Value="{Property Label}"/>
+	<Evolve.EvolveIcon  Icon="{Property this.IconType}" Color="White" Alignment="Center" Opacity="0.4" ux:Name="MenuIcon"/>
+	<Evolve.IconName ux:Property="IconType"/>
+	<WhileSelected>
+		<Change SelectionFill.Opacity="0.4" Duration="0.2"/>
+		<Change MenuIcon.Opacity="1" Duration="0.2"/>
+	</WhileSelected>
+	<Tapped>
+		<ToggleSelection/>
+	</Tapped>
+	<Rectangle Width="1" Height="100%" Color="#2D2A30" Alignment="Right"/>
+</Rectangle>

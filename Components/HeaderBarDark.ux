@@ -1,0 +1,14 @@
+<DockPanel ux:Class="Evolve.HeaderBarDark">
+	<Rectangle Height="58"  Dock="Top" Padding="20">
+		<Grid Columns="24,1*,24" Alignment="VerticalCenter" >
+			<Panel Height="24" Width="24" HitTestMode="LocalBoundsAndChildren" Clicked="{goBack}">
+				<Evolve.EvolveIcon  Icon="{Property this.LeftIcon}"  Color="White"/>
+			 </Panel><!--Clicked="{openSideMenuPanel}"-->
+			<Text Value="{Property this.Title}" TextAlignment="Center" Alignment="Center" TextColor="White"/>
+			<Evolve.EvolveIcon  Icon="{Property this.RightIcon}" Color="White"/>
+			<string ux:Property="Title"/>
+			<Evolve.IconName ux:Property="LeftIcon"/>
+			<Evolve.IconName ux:Property="RightIcon"/>
+		</Grid>
+	</Rectangle>
+</DockPanel>

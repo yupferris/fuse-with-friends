@@ -1,0 +1,13 @@
+<Panel ux:Class="Resources">
+	<Image StretchMode="UniformToFill" ux:Class="Evolve.BackgroundImage" >
+	    <MultiDensityImageSource>
+	        <FileImageSource File="Assets/BG_Image_Dark.png" Density="1"/>
+	        <FileImageSource File="Assets/BG_Image_Dark@2x.png" Density="2"/>
+	        <FileImageSource File="Assets/BG_Image_Dark@3x.png" Density="3"/>
+	    </MultiDensityImageSource>
+	</Image>
+	<Shadow Distance="40" Size="30" Color="#0004" Angle="90" ux:Class="Evolve.CardShadow" />
+	<Image File="Assets/StockImage.jpeg" StretchMode="Uniform" ux:Class="StockImage"/>
+	<Font File="Assets/Roboto-Medium.ttf" ux:Global="Roboto_Medium"/>
+	<Font File="Assets/Roboto-Light.ttf" ux:Global="Roboto_Light"/>
+</Panel>
