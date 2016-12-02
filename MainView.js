@@ -1,5 +1,8 @@
 var Backend = require("Modules/Backend");
 
+Backend.fetchCategories();
+Backend.fetchShoes();
+
 function gotoHome() {
 	router.goto("home");
 }
@@ -29,6 +32,7 @@ function goBack() {
 }
 
 module.exports = {
+	categories: Backend.categories,
 	shoes: Backend.shoes,
 
 	gotoHome: gotoHome,

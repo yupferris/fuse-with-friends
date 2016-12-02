@@ -1,15 +1,16 @@
 <Page ux:Class="HomePage" ClipToBounds="true">
 	<Router ux:Dependency="router"/>
+
 	<Evolve.HeaderBarDark Title="Categories"/>
 	<Viewport Perspective="300" CullFace="Back">
-	<Evolve.HorizontalCardPanel Margin="40,80,40,100">
-			<Each Count="5">
+		<Evolve.HorizontalCardPanel Margin="40,80,40,100">
+			<Each Items="{categories}">
 				<Evolve.Card ux:Class="Categories" Padding="40">
-					<Text Color="Evolve.TextDark" Value="Shoes" FontSize="24"/>
-					<Image File="Assets/Shoe Images/HighHeel1.jpg" StretchMode="PointPrecise"/>
+					<Text Color="Evolve.TextDark" Value="{name}" FontSize="24"/>
+					<Image File="{image}" StretchMode="PointPrecise"/>
 				</Evolve.Card>
 				<Categories Clicked="{pushDetail}"/>
 			</Each>
-	</Evolve.HorizontalCardPanel>
-</Viewport>
+		</Evolve.HorizontalCardPanel>
+	</Viewport>
 </Page>

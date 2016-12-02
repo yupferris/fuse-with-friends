@@ -6,6 +6,7 @@
   ],
   "Includes": [
     "*",
-    "Modules/*.js:Bundle"
+    "Modules/*.js:Bundle",
+    "Assets/Shoe Images/*:Bundle"
   ]
 }

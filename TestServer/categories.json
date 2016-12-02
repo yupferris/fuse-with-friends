@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Shoes",
+    "image": "Assets/Shoe Images/HighHeel1.jpg"
+  },
+  {
+    "name": "Tops",
+    "image": "Assets/Shoe Images/HighHeel2.jpg"
+  },
+  {
+    "name": "Hats",
+    "image": "Assets/Shoe Images/HighHeel3.jpg"
+  },
+  {
+    "name": "Dresses",
+    "image": "Assets/Shoe Images/HighHeel4.jpg"
+  },
+  {
+    "name": "Jeans",
+    "image": "Assets/Shoe Images/HighHeel5.jpg"
+  }
+]
