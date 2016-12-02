@@ -27,6 +27,10 @@ function removeFromCart(arg) {
 	cart.remove(arg.data);
 }
 
+function checkout() {
+	cart.clear();
+}
+
 function gotoHome() {
 	router.goto("home");
 }
@@ -64,6 +68,8 @@ module.exports = {
 
 	addToCart: addToCart,
 	removeFromCart: removeFromCart,
+
+	checkout: checkout,
 
 	gotoHome: gotoHome,
 	pushHome: pushHome,

@@ -6,7 +6,7 @@
 	<Grid Padding="20,60,20,0" Rows="auto,1*">
 		<Grid Columns="1*,1*" Margin="0,0,0,40">
 			<Text Value="Total: $239.00" TextColor="White" FontSize="24" Font="Roboto_Light" Alignment="CenterLeft"/>
-			<Evolve.StrokeButton ButtonText="CHECKOUT" Alignment="Right"/>
+			<Evolve.StrokeButton ButtonText="CHECKOUT" Alignment="Right" Clicked="{checkout}" />
 		</Grid>
 		<Panel Color="White" ux:Class="Evolve.CartItem" Opacity="0.1">
 			<Grid Columns="100,4*,1*">
