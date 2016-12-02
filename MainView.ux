@@ -19,9 +19,11 @@
 								<Clicked Handler="{pushDetail}"/>
 							</Evolve.BottomBarItem>
 							<Panel>
-								<Circle Height="20" Width="20" Color="Evolve.PrimaryRed" Alignment="Center" Offset="16,-10" ux:Name="notificationsBubble">
-									<Text TextColor="White" Value="8" FontSize="12" Font="Roboto_Medium" Alignment="Center" />
-								</Circle>
+								<WhileNotEmpty Items="{cart}">
+									<Circle Height="20" Width="20" Color="Evolve.PrimaryRed" Alignment="Center" Offset="16,-10" ux:Name="notificationsBubble">
+										<Text TextColor="White" Value="{cartCount}" FontSize="12" Font="Roboto_Medium" Alignment="Center" />
+									</Circle>
+								</WhileNotEmpty>
 								<Evolve.BottomBarItem Label="THREE" IconType="Cart">
 									<Clicked Handler="{gotoCart}"/>
 								</Evolve.BottomBarItem>

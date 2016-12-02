@@ -10,7 +10,7 @@
 						<Text Value="{name}" Alignment="Center" Font="Roboto_Light" TextAlignment="Center" TextWrapping="Wrap" TextColor="Evolve.TextMedium" FontSize="20"/>
 						<Text Value="{price}" Alignment="Center" Font="Roboto_Medium" TextColor="Evolve.TextDark"/>
 						<Image File="{image}"/>
-						<Evolve.StrokeButton ButtonText="ADD TO CART" Alignment="Right"/>
+						<Evolve.StrokeButton ButtonText="ADD TO CART" Alignment="Right" Clicked="{addToCart}" />
 					</StackPanel>
 				</Panel>
 				<Rotation DegreesY="-2" />

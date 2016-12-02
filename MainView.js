@@ -17,6 +17,16 @@ fetch("http://127.0.0.1:6502/shoes").then(function(response) {
 	shoes.replaceAll(data);
 });
 
+var cart = Observable();
+
+function addToCart(arg) {
+	cart.add(arg.data);
+}
+
+function removeFromCart(arg) {
+	cart.remove(arg.data);
+}
+
 function gotoHome() {
 	router.goto("home");
 }
@@ -48,6 +58,12 @@ function goBack() {
 module.exports = {
 	categories: categories,
 	shoes: shoes,
+
+	cart: cart,
+	cartCount: cart.count(),
+
+	addToCart: addToCart,
+	removeFromCart: removeFromCart,
 
 	gotoHome: gotoHome,
 	pushHome: pushHome,
