@@ -1,34 +1,37 @@
-var Observable = require('FuseJS/Observable');
-
-function gotoHome(){
+function gotoHome() {
 	router.goto("home");
 }
-function pushHome(){
+
+function pushHome() {
 	router.push("home");
 }
-function pushDetail(){
+
+function pushDetail() {
 	router.push("detail");
 }
-function gotoDetail(){
+
+function gotoDetail() {
 	router.goto("detail");
 }
-function pushCart(){
+
+function pushCart() {
 	router.push("cart");
 }
-function gotoCart(){
+
+function gotoCart() {
 	router.goto("cart");
 }
-function goBack(){
-	router.goBack();;
+
+function goBack() {
+	router.goBack();
 }
 
-
 module.exports = {
- gotoHome : gotoHome,
- pushHome : pushHome,
- gotoDetail : gotoDetail,
- pushDetail : pushDetail,
- gotoCart : gotoCart,
- pushCart : pushCart,
- goBack : goBack
+	gotoHome: gotoHome,
+	pushHome: pushHome,
+	gotoDetail: gotoDetail,
+	pushDetail: pushDetail,
+	gotoCart: gotoCart,
+	pushCart: pushCart,
+	goBack: goBack
 };
