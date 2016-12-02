@@ -1,3 +1,5 @@
+var Backend = require("Modules/Backend");
+
 function gotoHome() {
 	router.goto("home");
 }
@@ -27,6 +29,8 @@ function goBack() {
 }
 
 module.exports = {
+	shoes: Backend.shoes,
+
 	gotoHome: gotoHome,
 	pushHome: pushHome,
 	gotoDetail: gotoDetail,
