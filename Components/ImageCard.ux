@@ -1,8 +1,5 @@
 <Rectangle  Color="White" Opacity="0.4" ux:Class="Evolve.ImageCard" ClipToBounds="true">
 	<StackPanel ClipToBounds="true">
-		<Panel Alignment="Top" >
-			<StockImage/>
-		</Panel>
 		<Text Value="This is a Card Title" FontSize="24" Color="Evolve.TextDark" Alignment="TopLeft" Margin="20"/>
 	<TextBlock Margin="20,0" TextWrapping="Wrap" Color="Evolve.TextMedium" TextTruncation="Standard" Value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

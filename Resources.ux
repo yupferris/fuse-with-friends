@@ -7,7 +7,6 @@
 	    </MultiDensityImageSource>
 	</Image>
 	<Shadow Distance="40" Size="30" Color="#0004" Angle="90" ux:Class="Evolve.CardShadow" />
-	<Image File="Assets/StockImage.jpeg" StretchMode="Uniform" ux:Class="StockImage"/>
 	<Font File="Assets/Roboto-Medium.ttf" ux:Global="Roboto_Medium"/>
 	<Font File="Assets/Roboto-Light.ttf" ux:Global="Roboto_Light"/>
 </Panel>

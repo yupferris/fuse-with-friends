@@ -1,5 +1,6 @@
 <App>
 	<JavaScript File="MainView.js"/>
+	<iOS.StatusBarConfig Style="Light"/>
 	<ColorPalette />
 	<Router ux:Name="router" IsMasterRouter="false" />
 	<Evolve.SideMenuPanel>

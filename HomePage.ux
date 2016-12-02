@@ -7,11 +7,6 @@
 				<Evolve.Card ux:Class="Categories" Padding="40">
 					<Text Color="Evolve.TextDark" Value="Shoes" FontSize="24"/>
 					<Image File="Assets/Shoe Images/HighHeel1.jpg" StretchMode="PointPrecise"/>
-					<!--<WhilePressed>
-						<Rotate DegreesY="-2" Duration="0.2"/>
-						<Scale Factor="0.99"/>
-					</WhilePressed>-->
-					
 				</Evolve.Card>
 				<Categories Clicked="{pushDetail}"/>
 			</Each>

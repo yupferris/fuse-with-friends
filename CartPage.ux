@@ -24,7 +24,7 @@
 				</Evolve.EvolveIcon>
 			</Grid>
 			<WhileVisibleInScrollView>
-                <Change this.Opacity="1" Duration="0.2"/>
+                <Change this.Opacity="1" Duration="0.1"/>
                 <Scale Factor="1.01" Duration="0.2"/>
             </WhileVisibleInScrollView>
 		</Panel>
