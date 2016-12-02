@@ -1,7 +1,21 @@
-var Backend = require("Modules/Backend");
+var Observable = require("FuseJS/Observable");
 
-Backend.fetchCategories();
-Backend.fetchShoes();
+var categories = Observable();
+var shoes = Observable();
+
+// Fetch categories
+fetch("http://127.0.0.1:6502/categories").then(function(response) {
+	return response.json();
+}).then(function(data) {
+	categories.replaceAll(data);
+});
+
+// Fetch shoes
+fetch("http://127.0.0.1:6502/shoes").then(function(response) {
+	return response.json();
+}).then(function(data) {
+	shoes.replaceAll(data);
+});
 
 function gotoHome() {
 	router.goto("home");
@@ -32,8 +46,8 @@ function goBack() {
 }
 
 module.exports = {
-	categories: Backend.categories,
-	shoes: Backend.shoes,
+	categories: categories,
+	shoes: shoes,
 
 	gotoHome: gotoHome,
 	pushHome: pushHome,
