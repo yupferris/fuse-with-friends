@@ -1,0 +1,17 @@
+<Panel Alignment="Center" Color="White" Opacity="0.4" ux:Class="Evolve.Card" ClipToBounds="true">
+	<Scaling ux:Name="pageScaling" Factor="0.95" />
+	<ActivatingAnimation>
+		<Change this.Opacity="1" Duration="0.5"/>
+		<Change pageScaling.Factor="1" Duration="0.5" />
+	</ActivatingAnimation>
+	<EnteringAnimation Scale="0.5">
+		<Move X="-2.1" RelativeTo="ParentSize" Duration="0.5"/>
+	</EnteringAnimation>
+	<ExitingAnimation Scale="0.5">
+		<Move X="2.1" RelativeTo="ParentSize" Duration="0.5"/>
+	</ExitingAnimation>
+	<WhilePressed>
+		<Scale Factor="0.99" Duration="0.1"/>
+	</WhilePressed>
+	<Evolve.CardShadow/>
+</Panel>

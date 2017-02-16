@@ -1,0 +1,17 @@
+<DockPanel ux:Class="Evolve.BackPanel">
+	<Rectangle Height="58"  Dock="Top" Padding="20">
+		<Grid Columns="24,1*" Alignment="VerticalCenter" >
+			<Panel Height="24" Width="24" HitTestMode="LocalBoundsAndChildren" Clicked="{goBack}" Visibility="Hidden" ux:Name="BackArrow">
+				<Evolve.EvolveIcon Icon="Arrow" Color="White"/>
+				<WhilePressed>
+					<Scale Factor="0.9"/>
+				</WhilePressed>
+			 </Panel>
+			<Text Value="{Property this.Title}" TextAlignment="Center" Alignment="Center" TextColor="White"/>
+			<string ux:Property="Title"/>
+		</Grid>
+	</Rectangle>
+	<WhileCanGoBack >
+		<Change BackArrow.Visibility="Visible"/>
+	</WhileCanGoBack>
+</DockPanel>

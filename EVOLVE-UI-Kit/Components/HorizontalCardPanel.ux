@@ -1,0 +1,6 @@
+<Panel ux:Class="Evolve.HorizontalCardPanel" >
+	<LinearNavigation ux:Name="nav">
+		<NavigationMotion GotoEasing="QuadraticOut" GotoDuration="0.3" />
+	</LinearNavigation>
+	<SwipeNavigate SwipeDirection="Left"/>
+</Panel>

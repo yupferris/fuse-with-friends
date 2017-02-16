@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Some Random Stilleto",
+    "price": 59.99,
+    "image": "Assets/Shoe Images/HighHeel1.jpg"
+  },
+  {
+    "name": "Another Random Stilleto",
+    "price": 39.99,
+    "image": "Assets/Shoe Images/HighHeel2.jpg"
+  },
+  {
+    "name": "How About These Stilletos",
+    "price": 129.99,
+    "image": "Assets/Shoe Images/HighHeel3.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 19.99,
+    "image": "Assets/Shoe Images/HighHeel4.jpg"
+  },
+  {
+    "name": "Even Yet Another Stilleto",
+    "price": 29.99,
+    "image": "Assets/Shoe Images/HighHeel5.jpg"
+  },
+  {
+    "name": "Uncomfortable Stilleto",
+    "price": 79.99,
+    "image": "Assets/Shoe Images/HighHeel6.jpg"
+  },
+  {
+    "name": "Not the Best Stilleto Here",
+    "price": 59.99,
+    "image": "Assets/Shoe Images/HighHeel7.jpg"
+  },
+  {
+    "name": "Small Pink Shiny Stilleto",
+    "price": 29.99,
+    "image": "Assets/Shoe Images/HighHeel8.jpg"
+  },
+  {
+    "name": "Wood and Straps Stilleto",
+    "price": 9.99,
+    "image": "Assets/Shoe Images/HighHeel9.jpg"
+  },
+  {
+    "name": "Who Chose These Colors Stilleto",
+    "price": 129.99,
+    "image": "Assets/Shoe Images/HighHeel10.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 119.99,
+    "image": "Assets/Shoe Images/HighHeel11.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 79.99,
+    "image": "Assets/Shoe Images/HighHeel12.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 39.99,
+    "image": "Assets/Shoe Images/HighHeel13.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 99.99,
+    "image": "Assets/Shoe Images/HighHeel14.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 49.99,
+    "image": "Assets/Shoe Images/HighHeel15.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 19.99,
+    "image": "Assets/Shoe Images/HighHeel16.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 19.99,
+    "image": "Assets/Shoe Images/HighHeel17.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 29.99,
+    "image": "Assets/Shoe Images/HighHeel19.jpg"
+  },
+  {
+    "name": "Please Buy This Stilleto",
+    "price": 99.99,
+    "image": "Assets/Shoe Images/HighHeel20.jpg"
+  }
+]

@@ -1,0 +1,10 @@
+<DockPanel ux:Class="Evolve.HeaderBarLight">
+	<Rectangle Height="58" Color="White" Dock="Top" Padding="20">
+		<Grid Columns="24,1*,24" Alignment="VerticalCenter" >
+			<Evolve.EvolveIcon  Icon="Menu" Color="Black" Clicked="{openSideMenuPanel}"/>
+			<Text Value="{Property this.Title}" TextAlignment="Center" Alignment="Center" TextColor="Evolve.TextDark"/>
+			<Evolve.EvolveIcon  Icon="Search" Color="Black"/>
+			<string ux:Property="Title"/>
+		</Grid>
+	</Rectangle>
+</DockPanel>

@@ -1,0 +1,4 @@
+<Circle Height="20" Width="20" Color="Evolve.PrimaryRed" Alignment="Center" Offset="16,-10" ux:Class="Evolve.NumberBubble">
+	<Text TextColor="White" Value="{Property this.BubbleText}" FontSize="12" Font="Roboto_Medium" Alignment="Center" />
+	<string ux:Property="BubbleText"/>
+</Circle>

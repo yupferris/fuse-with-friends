@@ -1,0 +1,25 @@
+<Container ux:Class="Evolve.SideMenuPanel" Subtree="subtree">
+	<JavaScript>
+		module.exports = {
+			openSideMenuPanel: function() {
+				edgeNav.open("Left");
+			}
+		}
+	</JavaScript>
+	<Evolve.SideMenu ux:Dependency="SideMenu"/>
+	<AlternateRoot ParentNode="SideMenu">
+		<ActivatingAnimation>
+			<Change overlay.Opacity="0.7" />
+		</ActivatingAnimation>
+	</AlternateRoot>
+
+	<EdgeNavigator ux:Name="edgeNav" ux:Binding="Children">
+		<Evolve.SideMenu ux:Ref="SideMenu" ux:Binding="Children" Edge="Left" />
+		<Panel Color="Evolve.BGGreyDark">
+			<Panel ux:Name="overlay" Color="Black" Opacity="0" HitTestMode="None" />
+			<Panel ux:Name="subtree">
+			</Panel>
+		</Panel>
+	</EdgeNavigator>
+</Container>
+

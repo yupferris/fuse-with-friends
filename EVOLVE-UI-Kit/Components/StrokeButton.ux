@@ -1,0 +1,13 @@
+<Panel ux:Class="Evolve.StrokeButton" >
+	<Rectangle CornerRadius="100" HitTestMode="LocalBoundsAndChildren" Color="#fff0" Alignment="Center" ux:Name="ButtonContainer">
+		<Stroke Width="2" Color="Evolve.PrimaryYellow"/>
+		<Text Font="Roboto_Medium" Value="{Property this.ButtonText}" ux:Name="ButtonLabel" FontSize="14" Color="Evolve.PrimaryYellow" Margin="20,10" Alignment="Center"/>
+		<WhilePressed>
+			<Change Target="ButtonContainer.Color" Value="Evolve.PrimaryYellow" Duration="0.1"/>
+			<Change Target="ButtonLabel.Color" Value="White" Duration="0.2"/>
+			<Scale Factor="0.99" Easing="QuinticIn"/>
+		</WhilePressed>
+		<string ux:Property="ButtonText"/>
+	</Rectangle>
+</Panel>
+			

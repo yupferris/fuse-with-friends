@@ -1,0 +1,43 @@
+<App>
+	<JavaScript File="MainView.js"/>
+	<iOS.StatusBarConfig Style="Light"/>
+	<ColorPalette />
+	<Router ux:Name="router" IsMasterRouter="false" />
+	<Panel Color="Evolve.PrimaryGreyDark">
+		<ClientPanel>
+			<DockPanel>
+				<Evolve.BottomBarPanel>
+					<Grid Columns="1*,1*,1*">
+						<Selection Value="ONE" MinCount="1" MaxCount="1" ux:Name="Selector"/>
+						<Evolve.BottomBarItem Label="ONE" IconType="Home" Clicked="{gotoHome}" />
+						<Evolve.BottomBarItem Label="TWO"  IconType="Browse" Clicked="{pushDetail}" />
+						<Panel>
+							<WhileNotEmpty Items="{cart}">
+								<Evolve.NumberBubble BubbleText="{cartCount}"/>
+							</WhileNotEmpty>
+							<Evolve.BottomBarItem Label="THREE" IconType="Cart" Clicked="{gotoCart}" />
+						</Panel>
+					</Grid>
+				</Evolve.BottomBarPanel>
+			</DockPanel>
+			<PageControl Active="home" Interaction="None">
+				<HomePage ux:Name="home" router="router">
+					<WhileActive>
+						<Change Selector.Value="ONE"/>
+					</WhileActive>
+				</HomePage>
+				<DetailPage ux:Name="detail" router="router">
+					<WhileActive>
+						<Change Selector.Value="TWO"/>
+					</WhileActive>
+				</DetailPage>
+				<CartPage ux:Name="cart" router="router">
+					<WhileActive>
+						<Change Selector.Value="THREE"/>
+					</WhileActive>
+				</CartPage>
+			</PageControl>
+		</ClientPanel>
+		<Evolve.BackgroundImage Opacity="0.5" />
+	</Panel>
+</App>

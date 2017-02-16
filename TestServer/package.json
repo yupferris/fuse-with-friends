@@ -1,0 +1,11 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "Test server for the Evolve UI kit example",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nconf": "^0.8.4"
+  }
+}

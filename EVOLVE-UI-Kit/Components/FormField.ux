@@ -1,0 +1,17 @@
+<Panel ux:Class="Evolve.FormField" Margin="0,1">
+	<Rectangle Width="90%" Height="60" Color="#2D2A30" X="10%" ux:Name="FormContainer">
+		<TextInput ux:Name="FormText" Margin="16,10" PlaceholderText="{Property this.HintText}"  PlaceholderColor="#fff6" TextColor="Evolve.TextLight" InputHint="{Property this.HintType}" IsPassword="{Property this.Password}">
+			<WhileFocused>
+				<Change FormContainer.X="0%" Duration="0.4" Easing="QuinticInOut"/>
+				<Change FormContainer.Color="White" Duration="0.4" Easing="QuinticInOut" />
+				<Change FormText.Margin="50,10" Duration="0.4" Easing="QuinticInOut"/>
+				<Change FormText.TextColor="Evolve.TextDark" Duration="0.4" Easing="QuinticInOut" />
+				<Change FormShadow.Color="#0004" Duration="0.4" Easing="QuinticInOut" />
+			</WhileFocused>
+		</TextInput>
+		<string ux:Property="HintText"/>
+		<bool ux:Property="Password"/>
+		<TextInputHint ux:Property="HintType"/>
+		<DropShadow Distance="40" Spread="0" Size="30" Color="#0000" Angle="90" ux:Name="FormShadow" />
+	</Rectangle>
+</Panel>

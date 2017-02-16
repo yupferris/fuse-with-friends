@@ -1,0 +1,13 @@
+<Page ux:Class="HomePage" ClipToBounds="true">
+	<Router ux:Dependency="router"/>
+	<Evolve.HeaderBarDark Title="Categories"/>
+	<Evolve.HorizontalCardPanel Margin="40,80,40,100">
+		<Each Items="{categories}">
+			<Evolve.Card ux:Class="Categories" Padding="40">
+				<Evolve.H1 Value="{name}"/>
+				<Image File="{image}" StretchMode="PointPrecise"/>
+			</Evolve.Card>
+			<Categories Clicked="{pushDetail}"/>
+		</Each>
+	</Evolve.HorizontalCardPanel>
+</Page>

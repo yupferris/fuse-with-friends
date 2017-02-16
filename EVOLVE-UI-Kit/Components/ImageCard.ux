@@ -1,0 +1,24 @@
+<Rectangle  Color="White" Opacity="0.4" ux:Class="Evolve.ImageCard" ClipToBounds="true">
+	<StackPanel ClipToBounds="true">
+		<Text Value="This is a Card Title" FontSize="24" Color="Evolve.TextDark" Alignment="TopLeft" Margin="20"/>
+	<TextBlock Margin="20,0" TextWrapping="Wrap" Color="Evolve.TextMedium" TextTruncation="Standard" Value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+	</StackPanel>
+	<Scaling ux:Name="pageScaling" Factor="0.95" />
+	<ActivatingAnimation>
+		<Change this.Opacity="1" Duration="0.5"/>
+		<Change pageScaling.Factor="1" Duration="0.5" />
+	</ActivatingAnimation>
+	<EnteringAnimation Scale="0.5">
+		<Move X="-1.7" RelativeTo="ParentSize" Duration="0.5"/>
+	</EnteringAnimation>
+	<ExitingAnimation Scale="0.5">
+		<Move X="1.7" RelativeTo="ParentSize" Duration="0.5"/>
+	</ExitingAnimation>
+	
+	<Evolve.CardShadow/>
+</Rectangle>

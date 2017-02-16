@@ -1,0 +1,41 @@
+<DockPanel ux:Class="Evolve.SideBar">
+	<JavaScript>
+		module.exports = {
+			openDrawerPanel: function() {
+				edgeNav.open("Left");
+			}
+		}
+	</JavaScript>
+	<Panel Dock="Left" >
+		<Evolve.SquareButton  Alignment="BottomLeft" IconRotation="0" ux:Name="SquareMenuButton">
+			<WhileTrue ux:Name="SideBarToggle">
+				<Change SideBarOptions.X="0" Duration="0.2"/>
+				<Change  Target="SquareMenuButton.IconRotation" Value="45" Duration="0.2"/>
+			</WhileTrue>
+			<Tapped>
+				<Toggle Target="SideBarToggle"/>
+			</Tapped>
+		</Evolve.SquareButton>
+		<Panel ux:Name="SideBarOptions" Color="Evolve.BGGreyDark" X="-80"  Height="100%" Width="80" >
+			<Text Value="Heading" TextColor="White" ux:Class="Evolve.SideBarItem" Alignment="Center"  Opacity="0.4">
+				<Rotation Degrees="-90"/>
+				<Selectable Value="{Property this.Label}"/>
+				<string ux:Property="Label"/>
+				<WhileSelected>
+					<Change this.TextColor="Evolve.PrimaryYellow" Duration="0.2"/>
+					<Change this.Opacity="1" Duration="0.2"/>
+				</WhileSelected>
+				<Tapped>
+					<ToggleSelection/>
+				</Tapped>
+			</Text>
+			<StackPanel ItemSpacing="60" Margin="0,0,0,40" Alignment="VerticalCenter" >
+				<Selection Value="ONE" MaxCount="1"/>
+				<Evolve.SideBarItem Label="ONE"/>
+				<Evolve.SideBarItem Label="TWO"/>
+				<Evolve.SideBarItem Label="THREE"/>
+				<Evolve.SideBarItem Label="FOUR"/>
+			</StackPanel>
+		</Panel>
+	</Panel>
+</DockPanel>

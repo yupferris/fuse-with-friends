@@ -1,0 +1,4 @@
+<Panel  ux:Class="Evolve.BottomBarPanel" Dock="Bottom" Height="80" Width="100%" ClipToBounds="true" Color="Evolve.PrimaryGreyDark">
+	<Rectangle Width="100%" Height="1" Color="#2D2A30" Alignment="Top"/>
+	<Evolve.BackgroundImage Alignment="Bottom" ContentAlignment="Bottom" Layer="Background" Opacity="0.5"/>
+</Panel>
